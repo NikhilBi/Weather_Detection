@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('bg.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 50px auto;
+    border-radius: 1rem;
+    background: #f5f5f5; /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 600px;
+    padding: 30px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ecf0f1;
+    border-radius: .5rem;
+    font-size: 1rem;
+    outline: none; /* Remove default input focus outline */
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-btn {
+    border: none;
+    color: #fff;
+    background-color: #3498db; /* Blue button */
+    padding: 12px;
+    margin-left: .6rem;
+    border-radius: .5rem;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.city-date-search {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-date-search .city {
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.city-date-search .date {
+    font-size: .8rem;
+    background-color: #fff;
+    color: #333; /* Darker text color */
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.temp-info {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.description-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333; /* Darker text color */
+}
+
+.description .description-text i {
+    font-size: 1.5rem;
+    opacity: .8;
+}
+
+.temp {
+    font-size: 7rem;
+    color: #333; /* Darker text color */
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info,
+.precipitation-info {
+    background-color: #ecf0f1;
+    width: 150px;
+    box-shadow: 2px 2px 10px hsl(0, 0%, 54%);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+
+.wind-info i,
+.humidity-info i,
+.visibility-info i,
+.precipitation-info i {
+    opacity: .9;
+}
+
+.wind-info div,
+.humidity-info div,
+.visibility-info div,
+.precipitation-info div {
+    text-align: center;
+}
+
+.precipitation-info i {
+    color: #4CAF50; /* Green color for precipitation icon */
+    font-size: 2rem; /* Adjust icon size */
+}
+
+#copyright {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #555; /* Dark gray text color */
+    float: right;
+    letter-spacing: 3px;
+    margin-right: 30rem;
+}
+
+@media only screen and (max-width: 1025px) {
+    #copyright {
+        margin-right: 13.8rem;
+        font-weight: 550;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    #copyright {
+        margin-right: 5.7rem;
+        font-weight: 550;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    html {
+        font-size: 85%;
+    }
+
+    .container {
+        max-width: 400px;
+    }
+
+    input[type="text"] {
+        border-radius: 8px;
+    }
+
+    .search-btn {
+        padding: 9px;
+        border-radius: 6px;
+    }
+
+    .search-btn i {
+        font-size: 25px;
+    }
+
+    .wind-info,
+    .humidity-info,
+    .visibility-info {
+        padding: 15px 20px;
+    }
+
+    .humidity-info {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .description {
+        margin-left: -10px;
+    }
+
+    #copyright {
+        margin-right: 2rem;
+        font-weight: 540;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 60%;
+    }
+
+    .container {
+        max-width: 300px;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .search-btn {
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .search-btn i {
+        font-size: 14px;
+    }
+
+    .wind-info,
+    .humidity-info,
+    .visibility-info {
+        padding: 10px 10px;
+    }
+
+    .humidity-info {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    #copyright {
+        margin-right: 30px;
+    }
+}
+
+   
